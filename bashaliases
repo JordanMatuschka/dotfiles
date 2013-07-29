@@ -1,0 +1,15 @@
+# add 'source ~/dotfiles/bashaliases' to your .profile or .bashrc
+alias d='ls -G'
+alias e='ls -G'
+alias ':q'='cd ..'
+alias 'cd..'='cd ..'
+alias grep='grep -a --color=auto'
+alias rgrep='grep -Ra --color=auto'
+alias rigrep='grep -Rai --color=auto'
+alias homebrew=brew
+alias vmail=/usr/local/lib/ruby/gems/1.9.1/gems/vmail-2.7.8/bin/vmail
+alias get=git
+alias hd='od -h'
+alias je='cd'
+export PS1="\h:\W\$ "
+
