@@ -1,4 +1,5 @@
 " add 'source ~/dotfiles/vimrc' to your .vimrc
+" be sure to create the directories ~/.vim/backup and ~/.vim/tmp if they don't exist
 
 syntax enable
 set incsearch
