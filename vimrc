@@ -1,4 +1,5 @@
 " add 'source ~/dotfiles/vimrc' to your .vimrc
+" be sure to create the directories ~/.vim/backup and ~/.vim/tmp if they don't exist
 
 syntax enable
 set incsearch
@@ -33,7 +34,8 @@ inoremap ii <Esc>
 " Let's use the mouse!
 " set mouse=a
 
-" Baddass status bar
+" Baddass status bar 
+" src http://www.reddit.com/r/vim/comments/gexi6/a_smarter_statusline_code_in_comments/
 hi StatColor guibg=#95e454 guifg=black ctermbg=lightgreen ctermfg=black
 hi Modified guibg=orange guifg=black ctermbg=lightred ctermfg=black
 
