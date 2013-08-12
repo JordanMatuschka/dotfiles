@@ -28,7 +28,7 @@ set wildmenu
 set wildmode=list:longest
 
 " my capslock to esc doesn't work too well
-imap ii <Esc>
+inoremap ii <Esc>
 
 " Let's use the mouse!
 " set mouse=a
