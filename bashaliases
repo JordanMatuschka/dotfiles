@@ -3,8 +3,8 @@
 PATH="~/scripts:${PATH}"
 export PATH
 
-alias d='ls -G --color=always'
-alias e='ls -G --color=always'
+alias d='ls -G'
+alias e='ls -G'
 alias vi=vim
 alias ':q'='cd ..'
 alias 'cd..'='cd ..'
