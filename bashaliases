@@ -1,4 +1,8 @@
 # add 'source ~/dotfiles/bashaliases' to your .profile or .bashrc
+
+PATH="~/scripts:${PATH}"
+export PATH
+
 alias d='ls -G'
 alias e='ls -G'
 alias ':q'='cd ..'
