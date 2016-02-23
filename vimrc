@@ -15,6 +15,9 @@ set backup
 set backupdir=~/.vim/backup
 set directory=~/.vim/tmp
 
+" define an easier <Leader> key
+let mapleader=","
+
 " Remap to save your shifting pinkies
 nore ; :
 
