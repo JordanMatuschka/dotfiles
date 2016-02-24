@@ -18,3 +18,7 @@ alias hd='od -h'
 alias je='cd'
 export PS1="\h:\W\$ "
 
+# Ignore duplicate/repeated commands in .bash_history
+export HISTCONTROL=ignoreboth
+# Bump up history size
+export HISTSIZE=5000
