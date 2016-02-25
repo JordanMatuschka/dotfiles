@@ -10,6 +10,10 @@ set hlsearch
 set expandtab
 set paste
 
+" Nice line wrapping
+set breakindent
+set showbreak=>>>>
+
 " Make backspace work properly
 set backspace=2
 
