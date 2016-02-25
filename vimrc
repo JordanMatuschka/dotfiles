@@ -10,6 +10,9 @@ set hlsearch
 set expandtab
 set paste
 
+" Make backspace work properly
+set backspace=2
+
 " Keep all temporary and backup files in one spot:
 set backup
 set backupdir=~/.vim/backup
@@ -21,7 +24,7 @@ let mapleader=","
 " Remap to save your shifting pinkies
 nore ; :
 
-" I'm a retard with the shift key
+" Stupid aliases for my bad shifting practices
 :command WQ wq
 :command Wq wq
 :command W w
@@ -35,7 +38,7 @@ set wildmode=list:longest
 inoremap ii <Esc>
 
 " Let's use the mouse!
-" set mouse=a
+set mouse=a
 
 " Baddass status bar 
 " src http://www.reddit.com/r/vim/comments/gexi6/a_smarter_statusline_code_in_comments/
