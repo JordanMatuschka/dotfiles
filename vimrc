@@ -1,18 +1,28 @@
-" add 'source ~/dotfiles/vimrc' to your .vimrc
+"Z, add 'source ~/dotfiles/vimrc' to your .vimrc
 " be sure to create the directories ~/.vim/backup and ~/.vim/tmp if they don't exist
 
 syntax enable
 set incsearch
 set ts=4
 set shiftwidth=4
+set softtabstop=4
 set tabstop=4
 set hlsearch
 set expandtab
+set autoindent
 set paste
 
+" Allow manual folding
+setlocal foldmethod=manual
+" Automatically save/load views (and therefore folds)
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview 
+
 " Nice line wrapping
-set breakindent
-set showbreak=>>>>
+if v:version >= 704
+	set breakindent
+	set showbreak=>>>>
+endif
 
 " Make backspace work properly
 set backspace=2
@@ -42,7 +52,11 @@ set wildmode=list:longest
 inoremap ii <Esc>
 
 " Let's use the mouse!
+" if you need to copy/paste from the console, you can use :set mouse-=a to disable automatic visual mode
 set mouse=a
+
+map <C-m> :NERDTreeToggle<CR>
+
 
 " Baddass status bar 
 " src http://www.reddit.com/r/vim/comments/gexi6/a_smarter_statusline_code_in_comments/

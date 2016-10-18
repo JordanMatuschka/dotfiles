@@ -16,6 +16,7 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'tpope/vim-fugitive'
 Plugin 'joonty/vim-phpqa'
 Plugin 'StanAngeloff/php.vim'
+Plugin 'scrooloose/nerdtree'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
@@ -31,7 +32,8 @@ Plugin 'StanAngeloff/php.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
+"filetype plugin indent on    " required
+filetype plugin on
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
