@@ -17,6 +17,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'joonty/vim-phpqa'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jceb/vim-orgmode'
+Plugin 'gregsexton/MatchTag'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
