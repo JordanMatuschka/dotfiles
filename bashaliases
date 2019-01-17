@@ -3,6 +3,7 @@
 PATH="~/scripts:${PATH}"
 export PATH
 
+alias ls='ls -G'
 alias d='ls -G'
 alias e='ls -G'
 alias vi=vim
@@ -16,7 +17,16 @@ alias vmail=/usr/local/lib/ruby/gems/1.9.1/gems/vmail-2.7.8/bin/vmail
 alias get=git
 alias hd='od -h'
 alias je='cd'
+alias finder=open # I really can't remember this?
+
+alias mergelog='git log --pretty=oneline --grep "into .master."'
+alias commitlog="git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
+
 export PS1="\h:\W\$ "
+
+# Easily edit/rm/etc the first or last files in the output of the previous command
+alias first='echo `$(history -p !!) | head -n 1` | xargs -o '
+alias last='echo `$(history -p !!) | tail -n 1` | xargs -o '
 
 # Ignore duplicate/repeated commands in .bash_history
 export HISTCONTROL=ignoreboth
